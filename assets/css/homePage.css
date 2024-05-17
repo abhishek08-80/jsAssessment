@@ -1,0 +1,65 @@
+.header {
+    padding: 10px;
+    display: flex;
+    justify-content: right;
+    background-color: rgb(159, 188, 211);
+}
+
+.logout{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+table.employee-table thead tr:first-child th{
+    padding: 20px 30px;
+    border: 1px solid rgb(193, 187, 187);
+    border-radius: 10px;
+}
+
+table.employee-table tbody tr td{
+    padding: 20px 30px;
+    border: 1px solid rgb(193, 187, 187);
+    border-radius: 10px;
+}
+nav{
+    text-align: center;
+}
+
+#pagination{
+    font-size: 30px;
+    color:red;
+    padding:0px 45% ;
+}
+
+#myInput{
+    padding: 14px 40px;
+    border-radius: 30px;
+    border: 5px solid aquamarine
+}
+
+#filterInput {
+    padding: 14px 40px;
+    border-radius: 30px;
+    border: 5px solid aquamarine
+}
+
+.searching{
+    text-align: center;
+}
+
+.header{
+    display: flex;
+     justify-content: right;
+}
+
+.wrapper{
+    margin: 10%;
+    border: 6px solid black;
+    border-radius: 39px;
+}
+ 
+.highestSalary{
+    display: flex;
+     justify-content: center;
+}

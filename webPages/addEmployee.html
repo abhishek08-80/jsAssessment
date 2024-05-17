@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap5.min.css" />
+    <link rel="stylesheet" href="../assets/css/addEmployee.css" />
+    <!-- Title -->
+    <title>Employee Management System</title>
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="wrapper">
+      <div>
+        <!-- Heading -->
+        <h2 style="text-align:center; background-color: aliceblue; padding: 20px;">Add Employee</h2>
+      </div>
+      <!-- Form -->
+      <form
+        class="row g-3 needs-validation"
+        style="margin: 50px 220px;border: 6px solid black;border-radius: 39px;"
+        id="employeeForm"
+      >
+        <!-- First name input -->
+        <div class="col-md-6">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom01"
+            placeholder="name"
+            name="firstName"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <!-- Email input -->
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="validationCustom02"
+            placeholder="email"
+            name="email"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <!-- Phone number input -->
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label"
+            >Phone Number</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom02"
+            placeholder="phone number"
+            name="phone"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <!-- Gender select -->
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">Gender</label>
+          <select class="form-select" aria-label="Default select example" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <!-- Salary input -->
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">Salary</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom02"
+            placeholder="salary"
+            name="salary"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <!-- Department select -->
+        <div class="col-md-6">
+          <label for="validationCustom04" class="form-label">Department</label>
+          <select class="form-select" id="validationCustom04" required 
+          name="dept">
+            <option selected disabled value="">departments...</option>
+            <option>Node</option>
+            <option>Dot Net</option>
+            <option>Php</option>
+            <option>Angular</option>
+            <option>React</option>
+            <option>Java</option>
+          </select>
+        </div>
+        <!-- Submit button -->
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit" style="margin: 3% 50%;">Submit form</button>
+        </div>
+      </form>
+    </div>
+    <!-- External JavaScript -->
+    <script src="../assets/js/addEmployee.js"></script>
+    <script src="/assets/js/bootstrap5.bundle.min.js"></script>
+  </body>
+</html>

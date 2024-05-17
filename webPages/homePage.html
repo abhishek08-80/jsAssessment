@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap5.min.css" />
+  <link rel="stylesheet" href="../assets/css/homePage.css" />
+  <link rel="icon" href="../assets/images/transfer_man_employee_user_avatar_arrow_refresh_icon_141997.ico"
+    type="images/x-icon" />
+</head>
+
+<body>
+  <section>
+    <div class="header">
+      <div>
+        <button type="button" class="btn btn-primary" id="addEmployee">Add Employee</button>
+        <button type="submit" id="logout" class="btn btn-secondary">Logout</button>
+      </div>
+    </div>
+    <h1 style="text-align: center; margin-top: 20px;">Employee Management System</h1>
+    <div class="wrapper">
+      <div>
+        <h2 style="display: flex; justify-content: center; padding: 20px;">Employee List</h2>
+<div class="searching">
+        <input type="text" id="myInput" onkeyup="searchFunc()" placeholder="Search for names..">
+        <select id="filterInput" onchange="filterFunc()">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <!-- <input type="text" id="filterInput" onchange="filterFunc()" placeholder="Male/Female"> -->
+      </div>
+      </div>
+      <table class="table" id="employeeTable">
+        <thead>
+          <tr">
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Gender</th>
+            <th>Salary</th>
+            <th>Department</th>
+            </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+      <!-- <nav aria-label="Page navigation example" id="pagination">
+        <ul class="pagination">
+        </ul>
+      </nav> -->
+      <nav aria-label="Page navigation">
+        <ul id="pagination" class="pagination">
+          <!-- Pagination links will be populated dynamically by JavaScript -->
+        </ul>
+      </nav>
+    </div>
+    <section style="margin-top: 60px;">
+      <div>
+        <h2 class="highestSalary">Highest Salary</h2>
+      </div>
+      <table class="table" id="salaryTable" style=" padding: 20px;border: 6px solid black; border-radius: 100px;">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Department</th>
+          </tr>
+        </thead>
+
+        <tbody class="salary">
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+
+      <div>
+        <h2 style="display: flex; justify-content: center; padding: 20px;">Employee Count Department Wise</h2>
+      </div class="col-md-6">
+      <table class="table" style=" padding: 20px;border: 6px solid black; border-radius: 100px;" id="departmentTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Employee Count</th>
+          </tr>
+        </thead>
+
+        <tbody class="department">
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    </div>
+  </section>
+  <script src="../assets/js/homePage.js"></script>
+  <script src="/assets/js/bootstrap5.bundle.min.js"></script>
+</body>
+
+</html>
